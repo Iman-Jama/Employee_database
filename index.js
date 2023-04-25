@@ -13,7 +13,7 @@ connection.connect((err) => {
 function questions() {
   inquirer
     .prompt({
-      name: 'action',
+      name: 'choices',
       type: 'list',
       message: 'What would you like to do?',
       choices: [
@@ -28,21 +28,21 @@ function questions() {
       ]
     })
     .then((answer) => {
-      if (answer.action === 'View all departments') {
+      if (answer.choices === 'View all departments') {
         viewDepartments();
-      } else if (answer.action === 'View all roles') {
+      } else if (answer.choices === 'View all roles') {
         viewRoles();
-      } else if (answer.action === 'View all employees') {
+      } else if (answer.choices === 'View all employees') {
         viewEmployees();
-      } else if (answer.action === 'Add a department') {
+      } else if (answer.choices === 'Add a department') {
         addDepartment();
-      } else if (answer.action === 'Add a role') {
+      } else if (answer.choices === 'Add a role') {
         addRole();
-      } else if (answer.action === 'Add an employee') {
+      } else if (answer.choices === 'Add an employee') {
         addEmployee();
-      } else if (answer.action === 'Update a role') {
+      } else if (answer.choices === 'Update a role') {
         updateRole();
-      } else if (answer.action === 'Exit') {
+      } else if (answer.choices === 'Exit') {
         console.log('Goodbye!');
         connection.end();
       }
