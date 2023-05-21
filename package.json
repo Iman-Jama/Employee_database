@@ -1,0 +1,17 @@
+{
+  "name": "employee_database",
+  "version": "1.0.0",
+  "description": "<a href=\"https://www.mit.edu/~amini/LICENSE.md\" alt=\"MIT License\">\r       <img src=\"https://img.shields.io/bower/l/css\" /></a>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^8.2.4",
+    "mysql": "^2.18.1"
+  }
+}

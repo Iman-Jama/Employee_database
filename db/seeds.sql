@@ -1,28 +1,20 @@
-INSERT INTO departments (id, name)
-VALUES
-  (1, 'Sales'),
-  (2, 'Engineering'),
-  (3, 'Marketing'),
-  (4, 'Finance');
+INSERT INTO departments (name)
+VALUES ('Sales'), ('Marketing'), ('Finance'), ('Human Resources');
 
-INSERT INTO roles (role_id, job_title, department_id, salary)
-VALUES
-  (1, 'Sales Representative', 1, 50000.00),
-  (2, 'Sales Manager', 1, 80000.00),
-  (3, 'Software Engineer', 2, 75000.00),
-  (4, 'Senior Software Engineer', 2, 100000.00),
-  (5, 'Marketing Coordinator', 3, 45000.00),
-  (6, 'Marketing Manager', 3, 70000.00),
-  (7, 'Financial Analyst', 4, 60000.00),
-  (8, 'Finance Manager', 4, 90000.00);
+INSERT INTO roles (title, department_id, salary)
+VALUES ('Sales Manager', 1, 70000.00),
+       ('Sales Representative', 1, 50000.00),
+       ('Marketing Manager', 2, 65000.00),
+       ('Marketing Coordinator', 2, 45000.00),
+       ('Finance Manager', 3, 80000.00),
+       ('Finance Analyst', 3, 60000.00),
+       ('HR Manager', 4, 75000.00),
+       ('HR Assistant', 4, 40000.00);
 
-INSERT INTO employees (id, first_name, last_name, job_title, department_id, salary, manager_id)
-VALUES
-  (1, 'John', 'Doe', 1, 1, 50000.00, 2),
-  (2, 'Jane', 'Doe', 2, 1, 80000.00, NULL),
-  (3, 'Bob', 'Smith', 3, 2, 75000.00, 4),
-  (4, 'Alice', 'Johnson', 4, 2, 100000.00, 4),
-  (5, 'Mike', 'Williams', 5, 3, 45000.00, 6),
-  (6, 'Julie', 'Davis', 6, 3, 70000.00, NULL),
-  (7, 'David', 'Lee', 7, 4, 60000.00, 8),
-  (8, 'Karen', 'Wong', 8, 4, 90000.00, NULL);
+INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES ('John', 'Doe', 1, NULL),
+       ('Jane', 'Smith', 2, 1),
+       ('Michael', 'Johnson', 2, 1),
+       ('Emily', 'Williams', 4, 3),
+       ('David', 'Brown', 5, 3),
+       ('Amy', 'Taylor', 7, 6);

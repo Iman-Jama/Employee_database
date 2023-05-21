@@ -1,7 +1,7 @@
 
 const inquirer = require('inquirer');
 const consoleTable = require('console.table');
-const connection = require('./connection');
+const connection = require('./config/connection');
 
 // Connect to the database
 connection.connect((err) => {
