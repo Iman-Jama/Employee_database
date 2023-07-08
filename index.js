@@ -57,7 +57,7 @@ function viewDepartments() {
       if (err) reject(err);
       console.table(res);
       resolve();
-      questions();
+      // questions();
     });
   });
 }

@@ -12,20 +12,23 @@
   
   - [Installation](#installation)
   - [Usage](#usage)
-  - [Credits](#credits)
   - [License](#license)
+  - [Contact](#contact-me)
   
 ## Installation
-  This package requires you to have NodeJS, Inquirer and MYSQL.
-  
+  In order to use this application, you will require NodeJs, Inquirer and MySQL2. First install NodeJS. Once you have done that you can then navigate to the command line interface and install inquirer and MySQL2 using the `npm install` command.
+
 ## Usage
- When the user starts the application in the command line, they are presented with options to view departments, view employees, view roles, add departments, add employees, add roles and update roles. Once they make their choice, they are either presented with a table showing the current employees/roles/departments or are asked more questions if they want to add more employees/update a role.
+ When the user navigates to the command line and inputs the following command:
+ ```node index.js``` 
+  The application will start. The user is then presented with options to view departments, view employees, view roles, add departments, add employees, add roles and update roles.
+  Once they make their choice, they are either presented with a table showing the current employees/roles/departments or are asked more questions if they want to add an employee/department/role or if they want to update a role.
+
+Here is an image of the application:
+![picture](/images/screenshot.png)
   
 ## License
 I used the MIT license for this application. Here is the link: https://www.mit.edu/~amini/LICENSE.md
-  
-## How to Contribute:
-N/A
   
 ## Contact me:
 My github is: [iman-jama](https://github.com/iman-jama) <br>
